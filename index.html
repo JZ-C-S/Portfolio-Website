@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+        .video-container {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">My portfolio</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links"> About Me </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links"> Projects </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact" class="navbar__links"> Contact </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#home" class="button"> Home </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Front Page -->
+    <div class="main" id="home">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Jack Zhang</h1>
+                <h2>Portfolio</h2>
+                <p>Includes side projects and contact information.</p>
+                <button class="main__btn"><a href="#about">Have a look</a></button>
+            </div>
+        </div>    
+    </div>
+
+    <section id="about">
+        <div class="about__content">
+            <h2>About Me</h2>
+            <p>
+                Ever since I was a kid, I have loved playing games and always wondered how they were made and brought to life. That curiosity slowly turned into a real interest in coding, and over time, I found myself exploring concepts like game development and website design. That’s what led me to study Computer Science and start creating projects of my own.
+            </p>
+            <p>
+                I’ve gained experience with several programming languages and tools, including Python, Java, C++, C, C# (using Unity), Haskell, and web technologies like HTML, CSS, and JavaScript. Recently, I’ve been focusing on Unity projects, building small game replicas to learn more about design, logic, and performance — and honestly, just to have fun with it.
+            </p>
+            <p>
+                What keeps me motivated is seeing how code can turn ideas into something real. Whether it’s a game, an app, or a website, I love the challenge of building things that work and look good. I’m always looking for new opportunities to learn, experiment, and keep growing as a developer.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <div class="services" id="projects">
+        <h1>Side Projects</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <div class="services__card-content">
+                    <h2>Flappy Bird Clone</h2>
+                    <div class="video-container">
+                        <video class="hover-video" src="vids/Flappy_bird.mp4" muted loop preload="metadata"></video>
+                    </div>
+                    <p>Made with Unity.</p>
+                    <a href="https://github.com/JZ-C-S/Flappy_Bird" target="_blank">
+                        <button>Check out the source code!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="services__card-content">
+                    <h2>Snake Clone</h2>
+                    <div class="video-container">
+                        <video class="hover-video" src="vids/Snake.mp4" muted loop preload="metadata"></video>
+                    </div>
+                    <p>Made with Unity.</p>
+                    <a href="https://github.com/JZ-C-S/Snake" target="_blank">
+                        <button>Check out the source code!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="services__card-content">
+                    <h2>Connect 4 Clone</h2>
+                    <div class="video-container">
+                        <video class="hover-video" src="vids/Connect_4.mp4" muted loop preload="metadata"></video>
+                    </div>
+                    <p>Made with Unity.</p>
+                    <a href="https://github.com/JZ-C-S/Connect_4_Clone" target="_blank">
+                        <button>Check out the source code!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="services__container second-row">
+            <div class="services__card">
+                <div class="services__card-content">
+                    <h2>Space Invaders Clone</h2>
+                    <div class="video-container">
+                        <video class="hover-video" src="vids/Space_invaders.mp4" muted loop preload="metadata"></video>
+                    </div>
+                    <p>Made with Unity.</p>
+                    <a href="https://github.com/JZ-C-S/Space_invaders" target="_blank">
+                        <button>Check out the source code!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="services__card">
+                <div class="services__card-content">
+                    <h2>Match It!</h2>
+                    <div class="video-container">
+                        <video class="hover-video" src="vids/Match_it.mp4" muted loop preload="metadata"></video>
+                    </div>
+                    <p>An original game developed collaboratively with a small team of peers.</p>
+                    <p>Made with Elm.</p>
+                    <a href="https://stabl.rocks/ShowModulePublish?modulePublishId=452d21d9-fd74-4a64-87ea-2d7fdf8caa25" target="_blank">
+                        <button>Try it yourself!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer__container" id="contact">
+        <div class="footer_links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Find Me</h2>
+                    <a href="https://www.linkedin.com/in/jack-zhang-a3957138b" target="_blank">LinkedIn (click to visit my linkedin)</a>
+                    <p class="footer__email">Email: jack.zhang8887@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social__media">
+            <div class="social__media--wrap">
+                <div class="social__icons">
+                    <a href="/" class="social__icons--link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       const videos = document.querySelectorAll('.hover-video');
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => video.play());
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+
+    </script>
+
+    <script src="apps.js"></script>
+</body> 
+</html>
