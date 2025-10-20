@@ -468,13 +468,6 @@
     transition: 0.3s ease-out; 
 } 
 
-.footer__email {
-  color: #fff;
-  margin-bottom: 0.5rem;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .social__icons--links{ 
     color:#fff; 
     font-size: 24px; 
